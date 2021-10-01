@@ -5,11 +5,11 @@ namespace MultipleInstanceExample
 {
     public class MainWindowViewModel
     {
-        private readonly IEnumerable<IThing> _things;
+        public IEnumerable<IThing> Things { get; }
 
         public MainWindowViewModel(IEnumerable<IThing> things)
         {
-            _things = things;
+            Things = things;
         }
     }
 }
